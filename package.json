@@ -1,0 +1,22 @@
+{
+  "name": "hauldesk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HaulDesk: an in-house transport management system for coordinating coal haulage between mines, power stations, rail sidings and a harbour. Portfolio project with fictitious data.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "db:setup": "node scripts/setup-db.js",
+    "data:generate": "node scripts/generate-data.js"
+  },
+  "author": "Leonard Masemula",
+  "license": "MIT",
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "dotenv": "16.4.5",
+    "express": "4.21.2",
+    "express-session": "1.18.1",
+    "mysql2": "3.11.5"
+  }
+}
